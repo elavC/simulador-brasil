@@ -4,13 +4,42 @@
 }
 
 body {
-    background-color: black;
-    background-image: linear-gradient(to bottom, rgb(73, 0, 73), black);
-    height: 130vh;
+    background-color: white;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;   
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;   
     width: 100%;
+}
+
+.banner-principal {
+    width: 100%;
+}
+
+.banner-principal .image {
+    width: 100%;
+}
+
+.banner-principal .image img {
+    width: 100%;
+}
+
+.logomarca {
+    width: 100%;
+    display: flex;
+}
+
+.logomarca .image {
+    width: 100%;
+    display: flex;
+}
+
+.logomarca .image img {
+    width: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 12px solid white;
+    margin-top: -64px;
 }
 
 .bandeiras {
@@ -18,22 +47,26 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 48px;
     gap: 32px;
 }
 
 .bandeira {
-    border-radius: 4px;
-    background-color: rgb(31, 0, 66);
+    border-radius: 10px;
+    background-color: black;
     border: 1px solid rgb(255, 255, 255);
-    width: 60%;
-    padding: 12px 0;
+    width: 250px;
+    padding: 16px 0;
     text-align: center;
     cursor: pointer;
 }
 
+#outras-bandeiras {
+    background-color: #50392f;
+}
 
-.main {
+
+.wrapper-bandeira {
     margin: auto;
     width: 80%;
     height: 100%;
@@ -42,13 +75,8 @@ body {
     flex-direction: column;
 }
 
-.other {
-    margin: auto;
-    width: 80%;
-    height: 100%;
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
+.space {
+    margin: 64px 0;
 }
 
 
@@ -58,7 +86,9 @@ h1 {
 }
 
 input {
-    width: 100%;
+    width: 90%;
+    padding: 8px ;
+    font-size: 24px;
 }
 
 table {
@@ -75,6 +105,30 @@ th {
 td {
     padding: 4px 0;
     text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #a7a7a7b3;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(52, 52, 52);
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 24px 0;
+    margin-top: 48px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0 auto;
+    
 }
 
 /* .hidder {
@@ -94,7 +148,7 @@ td {
     margin-top: 32px;
 }
 
-.form #sendBtn {
+.form #sendBtn, #sendBtnOther {
     margin-top: 24px;
     padding: 8px 0;
     width: 50%;
@@ -119,15 +173,26 @@ td {
     }
     .form {
         margin: auto;
-        width: 50%;
         background-color: rgba(0, 0, 0, 0.416);
         padding: 20px 10px 20px 20px;
         border-radius: 8px;
         box-shadow: rgba(109, 108, 108, 0.35) 0px 5px 15px;
     }
 
-    .main {
-        width: 40%;
+    .wrapper-bandeira {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .form {
+        margin-top: 0;
+    }
+
+    .logomarca .image img  {
+        width: 50px;
+        border: 8px solid white;
+        margin-top: -40px;
     }
 }
 

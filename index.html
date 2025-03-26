@@ -7,13 +7,26 @@
     <title>Simulador de Taxas</title>
 </head>
 <body>
+    <section class="top">
+        <div class="banner-principal">
+            <div class="image">
+                <img src="img/banner-principal.jpg" alt="">
+            </div>
+        </div>
+        <div class="logomarca">
+            <div class="image">
+                <img src="img/logo.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
     <div class="bandeiras" id="bandeiras">
         <div class="bandeira" id="visa-master">VISA OU MASTER</div>
         <div class="bandeira" id="outras-bandeiras">OUTRAS BANDEIRAS</div>
         <h1>Selecione a Bandeira!</h1>
     </div>
 
-    <div id="main" class="main">
+    <div id="main" class="main wrapper-bandeira">
         <h1>Consultar Taxas Visa ou Master</h1>
         <div class="form">
             <label id="" for="receber">Quanto quer Receber: </label>
@@ -125,7 +138,7 @@
         </table>
     </div>
 
-    <div id="other" class="other">
+    <div id="other" class="other wrapper-bandeira">
         <h1>Consultar Taxas Outras Bandeiras</h1>
         <div class="form">
             <label id="" for="receber">Quanto quer Receber: </label>
@@ -236,6 +249,12 @@
             </tr>
         </table>
     </div>
+
+    <div class="space"></div>
+
+    <footer>
+        <p>Todos os direitos reservador</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
